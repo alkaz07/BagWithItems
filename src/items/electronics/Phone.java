@@ -1,3 +1,5 @@
+package items.electronics;
+
 public class Phone {
         private String model;
         private double charge;
@@ -36,7 +38,7 @@ public class Phone {
 
         @Override
         public String toString() {
-                return "Phone{" +
+                return "items.Phone{" +
                         "model='" + model + '\'' +
                         ", charge=" + charge +
                         '}';

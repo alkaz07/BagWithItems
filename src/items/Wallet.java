@@ -1,3 +1,5 @@
+package items;
+
 public class Wallet {
     private String material;
     private String color;
@@ -36,7 +38,7 @@ public class Wallet {
 
     @Override
     public String toString() {
-        return "Wallet{" +
+        return "items.Wallet{" +
                 "material='" + material + '\'' +
                 ", color='" + color + '\'' +
                 ", otsekov=" + otsekov +

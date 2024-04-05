@@ -1,3 +1,7 @@
+import items.Bag;
+import items.electronics.Phone;
+import items.Wallet;
+
 public class Main {
     public static void main(String[] args) {
         Bag bag1 = new Bag("красная");

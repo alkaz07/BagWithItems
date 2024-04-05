@@ -1,3 +1,7 @@
+package items;
+
+import items.electronics.Phone;
+
 public class Bag {
     //
     String color;
@@ -54,7 +58,7 @@ public class Bag {
 
     @Override
     public String toString() {
-        return "Bag{" +
+        return "items.Bag{" +
                 "color='" + color + '\'' +
                 ", wallet=" + wallet +
                 ", phone=" + phone +
