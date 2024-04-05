@@ -51,4 +51,13 @@ public class Bag {
         else
             return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Bag{" +
+                "color='" + color + '\'' +
+                ", wallet=" + wallet +
+                ", phone=" + phone +
+                '}';
+    }
 }

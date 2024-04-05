@@ -5,17 +5,6 @@ public class Wallet {
     private int money;
 
 
-
-    @Override
-    public String toString() {
-        return "Кошелёк " +
-                "материал'" + material + '\'' +
-                ", цвет " + color + '\'' +
-                ", кармашки " + otsekov +
-                ", деньги" + money +
-                ".";
-    }
-
     public Wallet(String material, String color, int otsekov, int money) {
         this.material = material;
         this.color = color;
@@ -43,5 +32,24 @@ public class Wallet {
 
     public int getMoney() {
         return money;
+    }
+
+    @Override
+    public String toString() {
+        return "Wallet{" +
+                "material='" + material + '\'' +
+                ", color='" + color + '\'' +
+                ", otsekov=" + otsekov +
+                ", money=" + money +
+                '}';
+    }
+
+    public boolean spendMoney(int x){
+        if(x < money){
+            money -= x;
+            return true;
+        }
+        else
+            return false;
     }
 }

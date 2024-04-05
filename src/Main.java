@@ -20,5 +20,20 @@ public class Main {
         //доступ к свойствам кошелька отдельным методом сумки
         System.out.println("порывшись в 1 сумке, можно найти "+bag1.getWalletMoney()+" денег внутри кошелька");
         System.out.println("порывшись в 2 сумке, можно найти "+bag2.getWalletMoney()+" денег внутри кошелька");
+
+        Phone p = new Phone("Iphone", 35);  //покупаем новый телефон
+        bag1.setPhone(p);                   //и кладем в сумочку
+
+        if(bag1.getPhone() != null)
+            System.out.println("модель телефона, который есть в первой сумке: "+bag1.getPhone().getModel());
+
+
+        System.out.println("Досмотр сумки 1: "+ bag1);
+        System.out.println("Досмотр сумки 2: "+ bag2);
+
+        //потратим деньги
+        int k=700;
+        if(bag2.getWallet().spendMoney(k))
+            System.out.println("мы потратили "+k+" денег, осталось "+bag2.getWalletMoney());
     }
 }

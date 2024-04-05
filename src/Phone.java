@@ -33,4 +33,12 @@ public class Phone {
                 if (charge > 100) charge = 100;
                 return charge;
         }
+
+        @Override
+        public String toString() {
+                return "Phone{" +
+                        "model='" + model + '\'' +
+                        ", charge=" + charge +
+                        '}';
+        }
 }
